@@ -16,3 +16,9 @@
 li { 
   font-size: 20px; 
 }
+
+
+.names {
+  display: grid; 
+  word-spacing: nowrap 50px;
+}
