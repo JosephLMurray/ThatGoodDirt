@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" />
-
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
   <title>ThatGoodDirt</title>
@@ -48,14 +47,16 @@
   </header>
   <main>
     <!--primary button to start the process-->
-    <button  class="btn glass btn-accent primaryBtn" id="getStarted" onclick="launchModal()">Get Started!</button>
+    <button  class="btn glass btn-accent primaryBtn" id="getStarted">Get Started!</button>
   </main>
+  
   
 </body>
 <!-- div for centering form, hide js function -->
-<div class = "iForm">
-  <div id = "iForm" class="block p-6 rounded-lg shadow-lg bg-emerald-700 max-w-md">
-    <form id= "iForm">
+
+<div class = "iForm hidden" id="iBlock">
+  <div class="block p-6 rounded-lg shadow-lg  max-w-md">
+    <form id= "iForm hidden">
       <div class="grid grid-cols-2 gap-4">
         
         <div class="form-group mb-6 text-white"><label>City</label>
@@ -120,6 +121,7 @@
           placeholder="Enter your desired type of Trail!">
       </div>
       <!-- added style to max its width -->
+
       <label class="range text-white">Slide to your range!</label>
       <input id="rangeIn" style="width:100%" type="range" min="0" max="100" value="25" class="range range-xs " step="25">
 <div class="w-100 flex justify-between text-xs px-2 rangeSlider text-white ">
@@ -128,6 +130,7 @@
   <span>15 km.</span>
   <span>20 km.</span>
   <span>25 km.</span>
+
 </div>
       <div class="form-group form-check text-center mb-3">
         <input type="checkbox"
@@ -175,9 +178,18 @@
     </div>
   </footer>
 
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script async
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1mZtud8Jal7Szr9WhsfOcw_DI4coig-E&libraries=places&callback=initMap">
+</script>
+
 <!-- <script async
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1mZtud8Jal7Szr9WhsfOcw_DI4coig-E&libraries=places&callback=initMap">
 </script> -->
+
 <script src="./assets/js/scripts.js"></script>
 </body>
 </html>
