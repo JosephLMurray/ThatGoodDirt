@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" />
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
   <title>ThatGoodDirt</title>
@@ -25,16 +27,19 @@
         <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
           <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
             <li>
-              <a href="#index.html" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+
+              <a href="index.html" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
             </li>
             <li>
-              <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+              <a href="" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+
             </li>
             <!-- <li>
               <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
             </li> -->
             <li>
-              <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+              <a href="contactpg.html" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+
             </li>
           </ul>
         </div>
@@ -43,8 +48,109 @@
   </header>
   <main>
     <!--primary button to start the process-->
-    <button id="getStarted" class="PLEASE STYLE ME!!!!" onclick="launchModal()"></button>
+    <button  class="btn glass btn-accent primaryBtn" id="getStarted" onclick="launchModal()">Get Started!</button>
   </main>
+  
+</body>
+<!-- div for centering form, hide js function -->
+<div class = "iForm">
+  <div id = "iForm" class="block p-6 rounded-lg shadow-lg bg-white max-w-md">
+    <form id= "iForm">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="form-group mb-6"><label>City</label>
+          <input type="text" class="form-control
+            block
+            w-full
+            px-3
+            py-1.5
+            text-base
+            font-normal
+            text-gray-700
+            bg-white bg-clip-padding
+            border border-solid border-gray-300
+            rounded
+            transition
+            ease-in-out
+            m-0
+            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="city"
+            aria-describedby="" placeholder="Enter any City!">
+        </div>
+        <div class="form-group mb-6"><label>zip</label>
+          <input type="text" class="form-control
+            block
+            w-full
+            px-3
+            py-1.5
+            text-base
+            font-normal
+            text-gray-700
+            bg-white bg-clip-padding
+            border border-solid border-gray-300
+            rounded
+            transition
+            ease-in-out
+            m-0
+            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="zipCode"
+            aria-describedby="" placeholder="Zip Code">
+        </div>
+      </div>
+      <div class="form-group mb-6"><label>Trail Type</label>
+        <input type="email" class="form-control block
+          w-full
+          px-3
+          py-1.5
+          text-base
+          font-normal
+          text-gray-700
+          bg-white bg-clip-padding
+          border border-solid border-gray-300
+          rounded
+          transition
+          ease-in-out
+          m-0
+          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="typeOfTrail"
+          placeholder="Enter your desired type of Trail!">
+      </div>
+      <!-- added style to max its width -->
+      <label class="range">Slide to your range!</label>
+      <input id="rangeIn" style="width:100%" type="range" min="0" max="100" value="25" class="range" step="25">
+<div class="w-100 flex justify-between text-xs px-2 rangeSlider">
+  <span>5</span>
+  <span>10</span>
+  <span>15</span>
+  <span>20</span>
+  <span>25</span>
+</div>
+      <div class="form-group form-check text-center mb-6">
+        <input type="checkbox"
+          class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
+          id="exampleCheck25" checked>
+        <label class="form-check-label inline-block text-gray-800" for="">Undecicded Check</label>
+      </div>
+      <button id = "submitBtn" type="submit" class="
+        w-full
+        px-6
+        py-2.5
+        bg-blue-600
+        text-white
+        font-medium
+        text-xs
+        leading-tight
+        uppercase
+        rounded
+        shadow-md
+        hover:bg-blue-700 hover:shadow-lg
+        focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+        active:bg-blue-800 active:shadow-lg
+        transition
+        duration-150
+        ease-in-out">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+
   <footer class="text-center text-white" style="background-color: #f1f1f1;">
     <div class="text-center text-gray-700 p-4" style="background-color: rgba(0, 0, 0, 0.2);">
       Made By: 
