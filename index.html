@@ -47,14 +47,15 @@
   </header>
   <main>
     <!--primary button to start the process-->
-    <button  class="btn glass btn-accent primaryBtn" id="getStarted" onclick="launchModal()">Get Started!</button>
+    <button  class="btn glass btn-accent primaryBtn" id="getStarted">Get Started!</button>
   </main>
+  
   
 </body>
 <!-- div for centering form, hide js function -->
-<div class = "iForm">
-  <div id = "iForm" class="block p-6 rounded-lg shadow-lg bg-white max-w-md">
-    <form id= "iForm">
+<div class = "iForm hidden" id="iBlock">
+  <div class="block p-6 rounded-lg shadow-lg  max-w-md">
+    <form id= "iForm hidden">
       <div class="grid grid-cols-2 gap-4">
         <div class="form-group mb-6"><label>City</label>
           <input type="text" class="form-control
@@ -163,5 +164,6 @@
 <script async
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1mZtud8Jal7Szr9WhsfOcw_DI4coig-E&libraries=places&callback=initMap">
 </script>
+<script src="./assets/js/scripts.js"></script>
 </body>
 </html>

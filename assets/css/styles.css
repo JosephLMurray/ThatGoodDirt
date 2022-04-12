@@ -32,3 +32,8 @@ main {
   display: grid; 
   place-items:center;
 }
+
+/* .nexTo { 
+  display: flex; 
+  flex: wrap;
+} */
