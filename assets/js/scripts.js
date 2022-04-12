@@ -1,4 +1,6 @@
-
+const startBtn = document.querySelector("#getStarted");
+const submitBtn = document.getElementById('#submitBtn')
+const getStarted = document.getElementById("getStarted");
 let secretKey;  
 // This calls the API, just update the url to have your key's name.
 const fetchKey = async() => {
@@ -49,28 +51,12 @@ const getHikingTrails = (lat, lon) => {
         });
 };
 
-const apiKey = "AIzaSyD1mZtud8Jal7Szr9WhsfOcw_DI4coig-E";
-const startBtn = document.querySelector("#getStarted");
-const submitBtn = document.getElementById('#submitBtn')
-const getStarted = document.getElementById("getStarted");
-
-
-
-
-
-
-
-
-
-
-
 
 const formBlock = $("#iBlock"); 
-
-
 getStarted.addEventListener('click', (e) => {
   e.preventDefault();
   formBlock.removeClass('hidden');
+  getStarted.classList.add('hidden');
 }); 
 
 console.log("heelooo")
