@@ -56,6 +56,7 @@ const formBlock = $("#iBlock");
 getStarted.addEventListener('click', (e) => {
   e.preventDefault();
   formBlock.removeClass('hidden');
+  getStarted.classList.add('hidden');
 }); 
 
 console.log("heelooo")
