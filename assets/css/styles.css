@@ -22,3 +22,13 @@ li {
   display: grid; 
   word-spacing: nowrap 50px;
 }
+
+.iForm {
+  display: grid; 
+  place-items:center;
+}
+
+main {
+  display: grid; 
+  place-items:center;
+}
