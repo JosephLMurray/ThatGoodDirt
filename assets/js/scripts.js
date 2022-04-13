@@ -4,8 +4,29 @@ const getStarted = document.getElementById("getStarted");
 // const formBlock = document.getElementById('#iBlock);
 const formBlock = $("#iBlock"); 
 
+const mainForm = $("#iForm")
 
 
+function formSubmitHandler(e) { 
+    e.preventDefault();
+
+    const city = cityName.value.trim();
+    const zip = zipCode.value.trim();
+    const trail = trailType.value.trim();
+    const state = stateName.value.trim();
+    const rangeKm = range.value.trim();
+
+        if (city, zip, trail, state, rangeKm) { 
+            getHikingTrails(); 
+                city.value = "";
+                zip.value = "";
+                trail.value = "";
+                state.value = "";
+                rangeKm.value = "";
+        } else {
+            alert("Please enter all values.")
+        }
+}
 
 
 
@@ -65,9 +86,18 @@ const getHikingTrails = (lat, lon) => {
             }
         })
         .catch((error) => {
-          console.error('Unable to connect to Google Maps', error);
+        console.error('Unable to connect to Google Maps', error);
         });
 };
+
+
+
+
+
+
+
+
+
 
 
 
