@@ -8,45 +8,28 @@ const mainForm = $("#iForm")
 
 const formSubmitHandler = e => { 
     e.preventDefault();
-    const city = $("#city").value.trim();
-    const zip = $("#zipCode").value.trim();
-    const state = $("#state").value.trim();
-    const rangeKm = $("#rangeIn").value;
-    const biking = getElementById('biking')
-    const hiking = getElementById('hiking')
-
-
-    if (zip !== '') {
-        const addy = zip
-    } else if (city !== '' && state !== '') {
-        const addy = city + ' ' + state; 
-    } else {
-        const addy = ''; 
-    }
-    if (addy === '') { 
+    const rangeKm = document.getElementById('rangeIn').value * 1000;
+    const address = getAddress();
+    let trails = chooseTrail();
+    if (!address || !trails){ 
         alert("Please enter all values.")
-    } if (biking && hiking ) { 
-        const trails = 'hiking biking trails'; 
-    } else if (biking){
-        const trails = 'biking Trail'; 
-    } else if (hiking) {
-        const trails = "hiking trails"; 
-    } else { 
-        alert('You must select a trail type')
+        return;
     }
-
-    getGeoCode(addy); 
+    getGeoCode(address, trails, rangeKm); 
 }
 
+const getAddress = () => {
+    const city = document.getElementById('city').value?.trim();
+    const zip = document.getElementById('zipCode').value?.trim();
+    const state = document.getElementById('state').value?.trim();
+    return zip !== '' ? zip : city && state ? city + ' ' + state : '';
+}
 
-
-
-
-
-
-
-
-
+const chooseTrail = () => {
+    const biking = document.getElementById('biking')?.value;
+    const hiking = document.getElementById('hiking')?.value;
+    return biking && hiking ? 'hiking biking trails' : biking ? 'biking trails' : hiking ? 'hiking trails' : '';
+}
 
 let secretKey;  
 // This calls the API, just update the url to have your key's name.
@@ -61,15 +44,15 @@ const fetchKey = async() => {
         secretKey = key.apiKey;
 });
 
-const getGeoCode = addy => {
-    const geoAPI = `https://maps.googleapis.com/maps/api/geocode/json?address=${addy}&key=${secretKey}`
+const getGeoCode = (address, trails, rangeKm) => {
+    const geoAPI = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${secretKey}`
     fetch(geoAPI)
         .then((response) => {
             if (response.ok) {
                 console.log(response);
             response.json().then((data) => {
                 const coords = data.results[0].geometry.location;
-                getHikingTrails(coords.lat, coords.lng);})
+                getHikingTrails(trails, rangeKm, coords.lat, coords.lng);})
             } else {
             console.error(response.statusText);
             }
@@ -79,11 +62,10 @@ const getGeoCode = addy => {
         });
 };
 
-const getHikingTrails = (lat, lon) => {
-    const radius = 5000;
+const getHikingTrails = (trails, rangeKm, lat, lon) => {
     const proxyURL = `https://floating-headland-95050.herokuapp.com/`
     
-    const placesAPI = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?keyword=hiking trails&location=${lat} ${lon}&radius=${radius}&key=${secretKey}`
+    const placesAPI = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?keyword=${trails}&location=${lat} ${lon}&radius=${rangeKm}&key=${secretKey}`
     fetch(proxyURL + placesAPI)
         .then((response) => {
             if (response.ok) {
