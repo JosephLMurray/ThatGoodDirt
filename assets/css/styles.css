@@ -44,6 +44,11 @@ main {
   
 } */
 
+
+#toHide { 
+  display:0;
+}
+
 .test {
   display: flex;
  justify-content: end;
