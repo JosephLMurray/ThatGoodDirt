@@ -39,6 +39,17 @@ main {
 } */
 
 
+/* .range-primary {
+  background-color: green!important;
+  
+} */
+
+.test {
+  display: flex;
+ justify-content: end;
+}
+
+
 #hero { 
   
 }
