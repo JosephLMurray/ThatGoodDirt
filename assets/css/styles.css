@@ -45,6 +45,6 @@ main {
 
 .test {
   display: flex;
-  flex: ;
+ justify-content: end;
 }
 
