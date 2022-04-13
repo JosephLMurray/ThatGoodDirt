@@ -51,9 +51,10 @@ const getGeoCode = addy => {
 
 const getHikingTrails = (lat, lon) => {
     const radius = 5000;
+    const proxyURL = `https://floating-headland-95050.herokuapp.com/`
     
     const placesAPI = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?keyword=hiking trails&location=${lat} ${lon}&radius=${radius}&key=${secretKey}`
-    fetch(placesAPI)
+    fetch(proxyURL + placesAPI)
         .then((response) => {
             if (response.ok) {
                 console.log(response);
