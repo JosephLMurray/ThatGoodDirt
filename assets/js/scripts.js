@@ -2,7 +2,6 @@ const startBtn = document.querySelector("#getStarted");
 const submitBtn = document.getElementById('#submitBtn')
 const getStarted = document.getElementById("getStarted");
 // const formBlock = document.getElementById('#iBlock);
-const formBlock = $("#iBlock"); 
 
 const mainForm = $("#iForm")
 
@@ -39,7 +38,7 @@ const formSubmitHandler = e => {
     getGeoCode(addy); 
 }
 
-mainForm.addEventListener('submit', formSubmitHandler);
+// mainForm.addEventListener('submit', formSubmitHandler);
 
 
 
@@ -112,9 +111,11 @@ const getHikingTrails = (lat, lon) => {
 
 
 getStarted.addEventListener('click', (e) => {
-  e.preventDefault();
-  formBlock.removeClass('hidden');
-  getStarted.classList.add('hidden');
+    e.preventDefault();
+    const formBlock = $("#iBlock"); 
+    formBlock.removeClass('hidden');
+    getStarted.classList.add('hidden');
+    document.getElementById('hero').style.display= "none"
 }); 
 
 console.log("heelooo")
