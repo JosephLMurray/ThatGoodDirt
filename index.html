@@ -30,7 +30,7 @@
               <a href="index.html" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
             </li>
             <li>
-              <a href="" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+              <a href="./aboutus.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
 
             </li>
             <!-- <li>
@@ -47,12 +47,29 @@
   </header>
   
 </body class="w-screen min-h-screen">
+
+
+<div id = "hero" class="hero min-h-screen" style="background-image: url(./assets/img/shutterstock_578493865\ copy.jpg);">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-center text-neutral-content">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-5xl font-bold">Welcome!</h1>
+      <p class="mb-5">Our main goal is to help people see where their nearest, best, and future planned trails can be. We will use google's api’s to use as search engines for their planned trails.</p>
+      <button  class="btn glass btn-accent primaryBtn" id="getStarted">Get Started!</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
     <!--primary button to start the process-->
-    <button  class="btn glass btn-accent primaryBtn" id="getStarted">Get Started!</button>
+    
   
 <!-- div for centering form, hide js function -->
 
-<div class = "iForm hidden" id="iBlock">
+<div class = "iForm hidden min-h-screen" id="iBlock">
   <div class="block p-6 rounded-lg shadow-lg bg-green-700 max-w-md">
     <form id= "iForm hidden">
       <div class="grid grid-cols-2 gap-4 ">
@@ -95,7 +112,7 @@
                 transition
                 ease-in-out
                 m-0
-                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="zipCode"
+                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="state"
                 aria-describedby="" placeholder="Zip Code">
             </div>
         <!-- test -->
@@ -118,23 +135,7 @@
             aria-describedby="" placeholder="Zip Code">
         </div>
       </div>
-      <div class="form-group mb-6 text-white"><label>Trail Type</label>
-        <input type="email" class="form-control block
-          w-full
-          px-3
-          py-1.5
-          text-base
-          font-normal
-          text-gray-700
-          bg-white bg-clip-padding
-          border border-solid border-gray-300
-          rounded
-          transition
-          ease-in-out
-          m-0
-          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="typeOfTrail"
-          placeholder="Enter your desired type of Trail!">
-      </div>
+      
       <!-- added style to max its width -->
 
       <label class="range text-white">Slide to your range!</label>
@@ -156,7 +157,9 @@
       <div class="form-group form-check text-center  mb-6">
         <input type="checkbox"
           class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-green-500  focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
+
           id="hiking" checked>
+        
         <label class="form-check-label inline-block text-white" for="">Hiking Trail</label>
       </div>
     
@@ -182,14 +185,18 @@
   </div>
 </div>
 
+<div id ="happyTrails" class="grid justify-items-center center gap-x-8 gap-y-4 grid-cols-3"></div>
 
-
-  <footer class="text-center text-white" style="background-color: #f1f1f1;">
-    <div class="text-center text-gray-700 p-4" style="background-color: rgba(0, 0, 0, 0.2);">
-      Made By: 
-      <a class="text-gray-800 names" href="https://tailwind-elements.com/">Joseph Murray<br>  Stephanie Chaparro-Roldan<br>  Rene Ortega<br>  Sarah Attar
-    </div>
-  </footer>
+<footer class="footer items-center p-4 bg-neutral text-neutral-content place-content-center	">
+  <div class="items-center grid-flow-col">
+    <img src="./assets/imgs/Image (1).jpeg" class="mr-3 h-6 sm:h-9 navImg" alt="That Good Dirt" /><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg> 
+    <p>Made By: Rene Ortega,  Joseph Murray,  Stephanie Chaparro-Roldan,  Sarah Attar<p>
+  </div> 
+  <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+    <a href="https://github.com/JosephLMurray/ThatGoodDirt" class="">
+      <img src="./assets/imgs/icons8-github-50.png">
+    </a> 
+</footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
