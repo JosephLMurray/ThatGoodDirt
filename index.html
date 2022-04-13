@@ -53,10 +53,15 @@
 <!-- div for centering form, hide js function -->
 
 <div class = "iForm hidden" id="iBlock">
-  <div class="block p-6 rounded-lg shadow-lg  max-w-md">
+  <div class="block p-6 rounded-lg shadow-lg bg-green-700 max-w-md">
     <form id= "iForm hidden">
-      <div class="grid grid-cols-2 gap-4">
-        
+      <div class="grid grid-cols-2 gap-4 ">
+      </div>
+      <div class="test">
+      <button class="btn btn-circle btn-outline align-items-right">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-16 " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+    </button>
+    </div>
         <div class="form-group mb-6 text-white"><label>City</label>
 
           <input type="text" class="form-control
@@ -75,13 +80,25 @@
             m-0
             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="city"
             aria-describedby="" placeholder="Enter any City!">
-        </div>
-        <div class="test">
-        <button class="btn btn-circle btn-outline">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-20 " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
-      </button>
-      </div>
-        </button>
+            <div class="form-group mt-3 mb-6 text-white"><label>State</label>
+              <input type="text" class="form-control
+                block
+                w-full
+                px-3
+                py-1.5
+                text-base
+                font-normal
+                text-gray-700
+                bg-white bg-clip-padding
+                border border-solid border-gray-300
+                rounded
+                transition
+                ease-in-out
+                m-0
+                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="zipCode"
+                aria-describedby="" placeholder="Zip Code">
+            </div>
+        <!-- test -->
         <div class="form-group mb-6 text-white"><label>zip</label>
           <input type="text" class="form-control
             block
