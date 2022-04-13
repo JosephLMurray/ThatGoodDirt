@@ -7,29 +7,39 @@ const formBlock = $("#iBlock");
 const mainForm = $("#iForm")
 
 
-function formSubmitHandler(e) { 
+const formSubmitHandler = e => { 
     e.preventDefault();
+    const city = $("#city").value.trim();
+    const zip = $("#zipCode").value.trim();
+    const state = $("#state").value.trim();
+    const rangeKm = $("#rangeIn").value;
+    const biking = getElementById('biking')
+    const hiking = getElementById('hiking')
 
-    const city = cityName.value.trim();
-    const zip = zipCode.value.trim();
-    const trail = trailType.value.trim();
-    const state = stateName.value.trim();
-    const rangeKm = range.value.trim();
 
-        if (city, zip, trail, state, rangeKm) { 
-            getHikingTrails(); 
-                city.value = "";
-                zip.value = "";
-                trail.value = "";
-                state.value = "";
-                rangeKm.value = "";
-        } else {
-            alert("Please enter all values.")
-        }
+    if (zip !== '') {
+        const addy = zip
+    } else if (city !== '' && state !== '') {
+        const addy = city + ' ' + state; 
+    } else {
+        const addy = ''; 
+    }
+    if (addy === '') { 
+        alert("Please enter all values.")
+    } if (biking && hiking ) { 
+        const trails = 'hiking biking trails'; 
+    } else if (biking){
+        const trails = 'biking Trail'; 
+    } else if (hiking) {
+        const trails = "hiking trails"; 
+    } else { 
+        alert('You must select a trail type')
+    }
+
+    getGeoCode(addy); 
 }
 
-
-
+mainForm.addEventListener('submit', formSubmitHandler);
 
 
 
