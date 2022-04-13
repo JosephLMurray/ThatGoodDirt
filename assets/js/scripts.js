@@ -1,6 +1,54 @@
 const startBtn = document.querySelector("#getStarted");
 const submitBtn = document.getElementById('#submitBtn')
 const getStarted = document.getElementById("getStarted");
+// const formBlock = document.getElementById('#iBlock);
+const formBlock = $("#iBlock"); 
+
+const mainForm = $("#iForm")
+
+
+const formSubmitHandler = e => { 
+    e.preventDefault();
+    const city = $("#city").value.trim();
+    const zip = $("#zipCode").value.trim();
+    const state = $("#state").value.trim();
+    const rangeKm = $("#rangeIn").value;
+    const biking = getElementById('biking')
+    const hiking = getElementById('hiking')
+
+
+    if (zip !== '') {
+        const addy = zip
+    } else if (city !== '' && state !== '') {
+        const addy = city + ' ' + state; 
+    } else {
+        const addy = ''; 
+    }
+    if (addy === '') { 
+        alert("Please enter all values.")
+    } if (biking && hiking ) { 
+        const trails = 'hiking biking trails'; 
+    } else if (biking){
+        const trails = 'biking Trail'; 
+    } else if (hiking) {
+        const trails = "hiking trails"; 
+    } else { 
+        alert('You must select a trail type')
+    }
+
+    getGeoCode(addy); 
+}
+
+mainForm.addEventListener('submit', formSubmitHandler);
+
+
+
+
+
+
+
+
+
 let secretKey;  
 // This calls the API, just update the url to have your key's name.
 const fetchKey = async() => {
@@ -28,7 +76,7 @@ const getGeoCode = addy => {
             }
         })
         .catch((error) => {
-           console.error('Unable to connect to Google Maps', error);
+          console.error('Unable to connect to Google Maps', error);
         });
 };
 
@@ -48,12 +96,21 @@ const getHikingTrails = (lat, lon) => {
             }
         })
         .catch((error) => {
-           console.error('Unable to connect to Google Maps', error);
+        console.error('Unable to connect to Google Maps', error);
         });
 };
 
 
-const formBlock = $("#iBlock"); 
+
+
+
+
+
+
+
+
+
+
 getStarted.addEventListener('click', (e) => {
   e.preventDefault();
   formBlock.removeClass('hidden');
