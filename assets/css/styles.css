@@ -1,0 +1,50 @@
+
+
+.navImg {
+  border-radius: 30px;
+  
+}
+
+.navPri {
+  padding: 20px; 
+}
+
+.textN { 
+  font-size: 50px;
+}
+
+li { 
+  font-size: 20px; 
+}
+
+
+.names {
+  display: grid; 
+  word-spacing: nowrap 50px;
+}
+
+.iForm {
+  display: grid; 
+  place-items:center;
+}
+
+main {
+  display: grid; 
+  place-items:center;
+}
+
+/* .nexTo { 
+  display: flex; 
+  flex: wrap;
+} */
+
+/* .range-primary {
+  background-color: green!important;
+  
+} */
+
+.test {
+  display: flex;
+  flex: ;
+}
+

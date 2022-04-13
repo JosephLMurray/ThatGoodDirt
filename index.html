@@ -4,9 +4,199 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
   <title>ThatGoodDirt</title>
+
 </head>
 <body>
+  <header>
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800 navPri">
+      <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="index.html" class="flex items-center">
+            <img src="./assets/imgs/Image (1).jpeg" class="mr-3 h-6 sm:h-9 navImg" alt="That Good Dirt" />
+            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">That Good Dirt</span>
+        </a>
+        <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+          <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+            <li>
+
+              <a href="index.html" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+
+            </li>
+            <!-- <li>
+              <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+            </li> -->
+            <li>
+              <a href="contactpg.html" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
   
+</body class="w-screen min-h-screen">
+    <!--primary button to start the process-->
+    <button  class="btn glass btn-accent primaryBtn" id="getStarted">Get Started!</button>
+  
+<!-- div for centering form, hide js function -->
+
+<div class = "iForm hidden" id="iBlock">
+  <div class="block p-6 rounded-lg shadow-lg bg-green-700 max-w-md">
+    <form id= "iForm hidden">
+      <div class="grid grid-cols-2 gap-4 ">
+      </div>
+      <div class="test">
+      <button class="btn btn-circle btn-outline align-items-right">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-16 " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+    </button>
+    </div>
+        <div class="form-group mb-6 text-white"><label>City</label>
+
+          <input type="text" class="form-control
+            block
+            w-full
+            px-3
+            py-1.5
+            text-base
+            font-normal
+            text-gray-700
+            bg- bg-clip-padding
+            border border-solid border-gray-300
+            rounded
+            transition
+            ease-in-out
+            m-0
+            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="city"
+            aria-describedby="" placeholder="Enter any City!">
+            <div class="form-group mt-3 mb-6 text-white"><label>State</label>
+              <input type="text" class="form-control
+                block
+                w-full
+                px-3
+                py-1.5
+                text-base
+                font-normal
+                text-gray-700
+                bg-white bg-clip-padding
+                border border-solid border-gray-300
+                rounded
+                transition
+                ease-in-out
+                m-0
+                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="zipCode"
+                aria-describedby="" placeholder="Zip Code">
+            </div>
+        <!-- test -->
+        <div class="form-group mb-6 text-white"><label>zip</label>
+          <input type="text" class="form-control
+            block
+            w-full
+            px-3
+            py-1.5
+            text-base
+            font-normal
+            text-gray-700
+            bg-white bg-clip-padding
+            border border-solid border-gray-300
+            rounded
+            transition
+            ease-in-out
+            m-0
+            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="zipCode"
+            aria-describedby="" placeholder="Zip Code">
+        </div>
+      </div>
+      <div class="form-group mb-6 text-white"><label>Trail Type</label>
+        <input type="email" class="form-control block
+          w-full
+          px-3
+          py-1.5
+          text-base
+          font-normal
+          text-gray-700
+          bg-white bg-clip-padding
+          border border-solid border-gray-300
+          rounded
+          transition
+          ease-in-out
+          m-0
+          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="typeOfTrail"
+          placeholder="Enter your desired type of Trail!">
+      </div>
+      <!-- added style to max its width -->
+
+      <label class="range text-white">Slide to your range!</label>
+      <input id="rangeIn" style="width:100%" type="range" min="0" max="100" value="25" class="range range-xs " step="25">
+<div class="w-100 flex justify-between text-xs px-2 rangeSlider text-white ">
+  <span>5 km.</span>
+  <span>10 km.</span>
+  <span>15 km.</span>
+  <span>20 km.</span>
+  <span>25 km.</span>
+
+</div>
+      <div class="form-group form-check text-center mb-3">
+        <input type="checkbox"
+          class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-green-500 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
+          id="biking" checked>
+        <label class="form-check-label inline-block text-white" for="">Biking Trail</label>
+      </div>
+      <div class="form-group form-check text-center  mb-6">
+        <input type="checkbox"
+          class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-green-500  focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
+          id="hiking" checked>
+        <label class="form-check-label inline-block text-white" for="">Hiking Trail</label>
+      </div>
+    
+      <button id = "submitBtn" type="submit" class="
+        w-full
+        px-6
+        py-2.5
+        bg-green-500
+        text-white
+        font-medium
+        text-xs
+        leading-tight
+        uppercase
+        rounded
+        shadow-md
+        hover:bg-green-700 hover:shadow-lg
+        focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0
+        active:bg-green-900 active:shadow-lg
+        transition
+        duration-150
+        ease-in-out">Submit</button>    
+    </form>
+  </div>
+</div>
+
+
+
+  <footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <div class="text-center text-gray-700 p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+      Made By: 
+      <a class="text-gray-800 names" href="https://tailwind-elements.com/">Joseph Murray<br>  Stephanie Chaparro-Roldan<br>  Rene Ortega<br>  Sarah Attar
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- <script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1mZtud8Jal7Szr9WhsfOcw_DI4coig-E&libraries=places&callback=initMap">
+  </script> -->
+
+  <script src="./assets/js/scripts.js"></script>
 </body>
 </html>
