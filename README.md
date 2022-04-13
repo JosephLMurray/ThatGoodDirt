@@ -2,7 +2,12 @@
 Project 1
 
 
-With simple and easy instructions we made it possible for anyone to enjoy mother nature. Creating an interacive experience finding trails near you making it fun from start to finish.
+With simple and easy instructions we made it possible for anyone to enjoy mother nature.
+
+Creating a safe and interacive platform for users to now find and experience trails near them.
+
+
+Making it a walk in the park from start to finish.  
 
 <!-- /*internet media type */ -->
 *website 
@@ -34,16 +39,16 @@ Once the user selects get started then the user will be promted with a questioni
 
 The user should be able to put in their loction information. 
 
-The user should be able to select the type od trail they would enjoy.
+The user should be able to select the type of trail they would enjoy.
 
 
 The user should be able to choose the distance of the trail desired.
 
 
-The user should be then propmtly redirected to be give trail options based on the selected users criteria.  
+The user should be then propmtly redirected to be given trail options based on the selected users imputed criteria.  
 
 
 
-Once the user desides which route to take the application will redirect them to the first step of their GoodDirt joourney exterience. 
+Once the user desides on which route to embark on the application will redirect the user to the first step of their GoodDirt journey exterience. 
 
 
