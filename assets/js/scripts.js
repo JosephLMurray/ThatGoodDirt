@@ -1,7 +1,6 @@
 const startBtn = document.querySelector("#getStarted");
 const submitBtn = document.getElementById('#submitBtn')
 const getStarted = document.getElementById("getStarted");
-<<<<<<< HEAD
 // const formBlock = document.getElementById('#iBlock);
 const formBlock = $("#iBlock"); 
 
@@ -18,7 +17,7 @@ const formBlock = $("#iBlock");
 
 
 
-=======
+
 let secretKey;  
 // This calls the API, just update the url to have your key's name.
 const fetchKey = async() => {
@@ -46,7 +45,7 @@ const getGeoCode = addy => {
             }
         })
         .catch((error) => {
-           console.error('Unable to connect to Google Maps', error);
+          console.error('Unable to connect to Google Maps', error);
         });
 };
 
@@ -65,13 +64,12 @@ const getHikingTrails = (lat, lon) => {
             }
         })
         .catch((error) => {
-           console.error('Unable to connect to Google Maps', error);
+          console.error('Unable to connect to Google Maps', error);
         });
 };
 
 
-const formBlock = $("#iBlock"); 
->>>>>>> 17c0aa4f6c94b49ea64b51c9612b78532e019825
+
 getStarted.addEventListener('click', (e) => {
   e.preventDefault();
   formBlock.removeClass('hidden');
