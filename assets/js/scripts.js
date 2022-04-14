@@ -123,8 +123,6 @@ const createCards = (results) => {
 
 }
 
-
-
 getStarted.addEventListener('click', (e) => {
     e.preventDefault();
     const formBlock = $("#iBlock"); 
@@ -133,13 +131,8 @@ getStarted.addEventListener('click', (e) => {
     document.getElementById('hero').style.display= "none"
 }); 
 
-
 // hide form after submit
 $("#submitBtn").click(function(e) { 
     e.preventDefault();
     $("#iBlock").hide();
-
-   
 });
-
-
