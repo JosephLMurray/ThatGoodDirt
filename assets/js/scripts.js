@@ -91,7 +91,7 @@ const createCards = (results) => {
             siteDeck += 
         `<div class = "leading-normal 	min-w-full	h-full			flex-wrap">`+
                 `<a
-                href=""
+                href="https://www.google.com/maps/place/?q=place_id:${results[i].place_id}" target ="_blank"
                 class="relative block overflow-hidden bg-center bg-no-repeat bg-cover  rounded-xl"
                 style="background-image: url()"
             >`+
@@ -141,5 +141,4 @@ $("#submitBtn").click(function(e) {
 
 });
 
-// mainForm.addEventListener('submit', formSubmitHandler);
 
