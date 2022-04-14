@@ -63,7 +63,8 @@ main {
 
 
 @media only screen and (max-width: 600px) {
-  .testy {
-    flex-direction: row;
+  #happyTrails {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
   }
 }
