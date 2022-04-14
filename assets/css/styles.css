@@ -1,7 +1,12 @@
-/* header {
+body {
+  min-height: 100vh;
+  width: 99vw;
+}
+
+header {
   position: fixed;
-  width: 100vw;
-} */
+  width: 100%
+}
 
 .navImg {
   border-radius: 30px;
