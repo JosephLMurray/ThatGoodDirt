@@ -89,11 +89,12 @@ const createCards = (results) => {
     // add i < 6 in for loop if we want 6 results....Rini
     for (let i = 0; i < results.length; i++) {
             siteDeck += 
-        `<div class = "leading-normal 	min-w-full	h-full			">`+
+        `<div  class = "leading-normal min-w-full	h-full	 ">`+
+        `<div class = "testy ">`+
                 `<a
-                href="https://www.google.com/maps/place/?q=place_id:${results[i].place_id}" target ="_blank"
+                href=""
                 class="relative block overflow-hidden bg-center bg-no-repeat bg-cover  rounded-xl"
-                style="background-image: url()"
+                style="background-image: url(https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&maxheight=400&photo_reference=${results[i].photos[0].photo_reference}&key=${secretKey})"
             >`+
                 `<span
                 class="absolute z-10 inline-flex items-center px-3 py-1 text-xs font-semibold text-white bg-black rounded-full  right-4 top-4"
@@ -117,13 +118,12 @@ const createCards = (results) => {
                 `<p class="text-sm">${results[i].vicinity}</p>`+
                 `</div>`+
             `</a>`+
-        `</div>`
+        `</div>`+
+    `</div>`
     }
     document.getElementById('happyTrails').innerHTML += siteDeck;     
 
 }
-
-
 
 getStarted.addEventListener('click', (e) => {
     e.preventDefault();
@@ -133,13 +133,16 @@ getStarted.addEventListener('click', (e) => {
     document.getElementById('hero').style.display= "none"
 }); 
 
-
 // hide form after submit
 $("#submitBtn").click(function(e) { 
     e.preventDefault();
     $("#iBlock").hide();
+<<<<<<< HEAD
 
-   
 });
 
+// mainForm.addEventListener('submit', formSubmitHandler);
 
+=======
+});
+>>>>>>> 186af7ac4ae750b10b1edec70f6b45cf52d1b8fd
