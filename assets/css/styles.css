@@ -57,8 +57,9 @@ main {
 
 .test {
   display: flex;
- justify-content: end;
+ justify-content: right;
 }
+
 
 
 @media only screen and (max-width: 600px) {
