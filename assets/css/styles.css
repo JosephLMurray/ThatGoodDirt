@@ -42,8 +42,9 @@ main {
 #happyTrails {
   position: absolute;
   top: 0;
-  left 0;
+  left: 0;
   width: 100%;
+  background-image: url(/assets/img/bgImage.jpg);
 }
 /* .nexTo { 
   display: flex; 
@@ -63,7 +64,7 @@ main {
 
 .test {
   display: flex;
- justify-content: right;
+  justify-content: right;
 }
 
 
