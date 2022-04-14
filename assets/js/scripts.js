@@ -90,8 +90,8 @@ const createCards = (results) => {
     // add i < 6 in for loop if we want 6 results....Rini
     for (let i = 0; i < results.length; i++) {
             siteDeck += 
-        `<div  class = "leading-normal min-w-full	h-full p-8	 ">`+
-        `<div class = "testy ">`+
+            // padding to make cards not touch eachother
+        `<div  class = "leading-normal min-w-full	h-full p-6	 ">`+
                 `<a
                 href=""
                 class="relative block overflow-hidden bg-center bg-no-repeat bg-cover  rounded-xl"
@@ -119,8 +119,7 @@ const createCards = (results) => {
                 `<p class="text-sm">${results[i].vicinity}</p>`+
                 `</div>`+
             `</a>`+
-        `</div>`+
-    `</div>`
+        `</div>`
     }
     document.getElementById('happyTrails').innerHTML += siteDeck;     
 
@@ -138,3 +137,8 @@ $("#submitBtn").click(function(e) {
     e.preventDefault();
     $("#iBlock").hide();
 });
+
+
+$("#newSearch").click(function(e) {
+    document.getElementById('iBlock').style.display = 'block';
+})

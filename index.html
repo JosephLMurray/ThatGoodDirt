@@ -35,7 +35,7 @@
 
             </li>
             <!-- <li>
-              <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+              <a id= "newSearch" href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">New Search</a>
             </li> -->
             <li>
               <a href="contactpg.html" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
@@ -59,15 +59,17 @@
       <button  class="btn glass btn-accent primaryBtn" id="getStarted">Get Started!</button>
     </div>
   </div>
-</div>
-
-
-
-
-
-    <!--primary button to start the process-->
+  <!-- this loads our results(where the trails are!) and has our background imag to it alrady!  -->
+  <div id ="happyTrails" class="grid justify-items-center center gap-x-8 gap-y-4 grid-cols-3 flex-wrap	"></div>
     
-  
+</div>
+<button class="btn btn-outline btn-accent" id= "newSearch">Find A new trail!</button>
+
+
+
+
+    
+      <!--primary button to start the process-->
 <!-- div for centering form, hide js function -->
 
 <div class = "iForm hidden min-h-screen" id="iBlock">
@@ -186,8 +188,9 @@
   </div>
 </div>
 
-<!-- div for all of our data into the cards. EHat we get after -->
-<div id ="happyTrails" class="grid justify-items-center center gap-x-8 gap-y-4 grid-cols-3 flex-wrap	"></div>
+
+
+
 
 <footer class="footer items-center p-4 bg-neutral text-neutral-content place-content-center	">
   <div class="items-center grid-flow-col">
