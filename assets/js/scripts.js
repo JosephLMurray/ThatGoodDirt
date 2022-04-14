@@ -15,6 +15,7 @@ const formSubmitHandler = e => {
         alert("Please enter all values.")
         return;
     }
+    getStarted.classList.add('hidden');
     getGeoCode(address, trails, rangeKm); 
 }
 
@@ -129,20 +130,11 @@ getStarted.addEventListener('click', (e) => {
     e.preventDefault();
     const formBlock = $("#iBlock"); 
     formBlock.removeClass('hidden');
-    getStarted.classList.add('hidden');
-    document.getElementById('hero').style.display= "none"
+
 }); 
 
 // hide form after submit
 $("#submitBtn").click(function(e) { 
     e.preventDefault();
     $("#iBlock").hide();
-<<<<<<< HEAD
-
 });
-
-// mainForm.addEventListener('submit', formSubmitHandler);
-
-=======
-});
->>>>>>> 186af7ac4ae750b10b1edec70f6b45cf52d1b8fd

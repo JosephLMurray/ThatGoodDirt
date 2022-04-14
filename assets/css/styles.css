@@ -39,6 +39,12 @@ main {
   place-items:center;
 }
 
+#happyTrails {
+  position: absolute;
+  top: 0;
+  left 0;
+  width: 100%;
+}
 /* .nexTo { 
   display: flex; 
   flex: wrap;
