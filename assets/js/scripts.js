@@ -137,12 +137,10 @@ getStarted.addEventListener('click', (e) => {
 $("#submitBtn").click(function(e) { 
     e.preventDefault();
     $("#iBlock").hide();
-<<<<<<< HEAD
+
 
 });
 
 // mainForm.addEventListener('submit', formSubmitHandler);
 
-=======
-});
->>>>>>> 186af7ac4ae750b10b1edec70f6b45cf52d1b8fd
+
