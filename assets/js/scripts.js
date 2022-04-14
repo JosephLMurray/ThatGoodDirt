@@ -95,7 +95,6 @@ const createCards = (results) => {
         console.log(images);
         siteDeck += 
         `<div  class = "leading-normal min-w-full	h-full p-6	 ">`+
-        `<div class = "testy ">`+
                 `<a
                 href=""
                 class="relative block overflow-hidden bg-center bg-no-repeat bg-cover  rounded-xl"
