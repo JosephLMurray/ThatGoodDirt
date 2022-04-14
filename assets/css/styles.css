@@ -39,6 +39,12 @@ main {
   place-items:center;
 }
 
+#happyTrails {
+  position: absolute;
+  top: 0;
+  left 0;
+  width: 100%;
+}
 /* .nexTo { 
   display: flex; 
   flex: wrap;
@@ -62,7 +68,8 @@ main {
 
 
 @media only screen and (max-width: 600px) {
-  .testy {
-    flex-direction: row;
+  #happyTrails {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
   }
 }
