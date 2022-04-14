@@ -141,6 +141,7 @@ $("#submitBtn").click(function(e) {
     $("#iBlock").hide();
 });
 
+
 $("#newSearch").click(function(e) {
     document.getElementById('iBlock').style.display = 'block';
 })

@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="preload" href="./assets/img/bgImage.jpg" as="image">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link type="stylesheet" src="./assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
     <title>Document</title>
 </head>
-<body class="bg-slate-700" >
+<body class="bg-base-200" >
     <header>
-        <nav class="bg-white border-gray-50 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800 navPri">
+        <nav class="bg-white border-gray-50 px-2 font-serif sm:px-4 py-2.5 rounded dark:bg-slate-700 navPri">
             <div class="container flex flex-wrap justify-between items-center mx-auto">
               <a href="index.html" class="flex items-center">
                   <img src="./assets/imgs/Image (1).jpeg" class="mr-3 h-6 sm:h-9 navImg" alt="That Good Dirt" />
@@ -24,28 +26,31 @@
               <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
                 <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                   <li>
-                    <a href="./index.html" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+
+                    <a href="index.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 hover:underline  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 " aria-current="page">Home</a>
                   </li>
                   <li>
-                    <a href="./aboutus.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                    <a href="./aboutus.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 hover:underline md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+      
                   </li>
                   <!-- <li>
                     <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
                   </li> -->
                   <li>
-                    <a href="./contactpg.html" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    <a href="contactpg.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 hover:underline md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+      
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
         
-        <h1 class="font-serif text-9xl text-white mx-10 ">About Us</h1>
+        <h1 class="font-serif text-7xl text-white mx-10 mt-12 ">About Us</h1>
     </header>
     <main class="mt-12 font-serif ">
         <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 opacity-90 text-gray-50">
             <!--Card1-->
-            <div class="rounded overflow-hidden shadow-xl bg-gray-500">
+            <div class="rounded overflow-hidden shadow-xl bg-base-100 opacity-90">
               <img class="w-full" src="./assets/imgs/about2.jpeg" alt="Mountain">
               <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">Our Story</div>
@@ -60,7 +65,7 @@
               </div>
             </div>
             <!--Card 2-->
-            <div class="rounded overflow-hidden shadow-xl bg-gray-500">
+            <div class="rounded overflow-hidden shadow-xl bg-base-100 opacity-90">
               <img class="w-full" src="./assets/imgs/about1.jpeg" alt="River">
               <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">Our Mission</div>
@@ -76,7 +81,7 @@
             </div>
         
             <!--Card 3-->
-            <div class="rounded overflow-hidden shadow-xl bg-gray-500 ">
+            <div class="rounded overflow-hidden shadow-xl bg-base-100 opacity-90 ">
               <img class="w-full" src="./assets/imgs/about3.jpeg" alt="Forest">
               <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-4">What's Next?</div>

@@ -67,7 +67,6 @@ main {
 }
 
 
-
 @media only screen and (max-width: 600px) {
   #happyTrails {
     grid-template-columns: repeat(1, minmax(0, 1fr));
