@@ -89,9 +89,11 @@ const createCards = (results) => {
     document.getElementById('happyTrails').innerHTML = siteDeck;
     // add i < 6 in for loop if we want 6 results....Rini
     for (let i = 0; i < results.length; i++) {
-        
-            siteDeck += 
-            // padding to make cards not touch eachother
+        const placeholder = 'Aap_uECRr6W4TkACwI2LRnFqeeayxAE6WV9YTObJqt6tCoI06xCqofy4PZ0-qbUMIyJhu2m47eblcXdEYM5NN-cWOl-K3WRTI2EPCBkbpq8mFNJHq67GKbsvlFRvN7FmSwnW-6Nr2W1IACBn2CWwBdSRPF4S3KYaqsjyN0qlRm5FiI-G7O2A';
+        let image = results[i].photos ?? '';
+        let images = image === '' ? placeholder : results[i].photos[0].photo_reference ;
+        console.log(images);
+        siteDeck += 
         `<div  class = "leading-normal min-w-full	h-full p-6	 ">`+
                 `<a
                 href=""
@@ -139,4 +141,7 @@ $("#submitBtn").click(function(e) {
     $("#iBlock").hide();
 });
 
+$("#newSearch").click(function(e) {
+    document.getElementById('iBlock').style.display = 'block';
+})
 
