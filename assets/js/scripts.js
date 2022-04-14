@@ -93,7 +93,7 @@ const createCards = (results) => {
                 `<a
                 href="https://www.google.com/maps/place/?q=place_id:${results[i].place_id}" target ="_blank"
                 class="relative block overflow-hidden bg-center bg-no-repeat bg-cover  rounded-xl"
-                style="background-image: url()"
+                style="background-image: url(https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&maxheight=400&photo_reference=${results[i].photos[0].photo_reference}&key=${secretKey})"
             >`+
                 `<span
                 class="absolute z-10 inline-flex items-center px-3 py-1 text-xs font-semibold text-white bg-black rounded-full  right-4 top-4"
@@ -123,8 +123,6 @@ const createCards = (results) => {
 
 }
 
-
-
 getStarted.addEventListener('click', (e) => {
     e.preventDefault();
     const formBlock = $("#iBlock"); 
@@ -133,13 +131,8 @@ getStarted.addEventListener('click', (e) => {
     document.getElementById('hero').style.display= "none"
 }); 
 
-
 // hide form after submit
 $("#submitBtn").click(function(e) { 
     e.preventDefault();
     $("#iBlock").hide();
-
-   
 });
-
-
