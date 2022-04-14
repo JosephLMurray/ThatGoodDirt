@@ -61,7 +61,6 @@ main {
 }
 
 
-
 @media only screen and (max-width: 600px) {
   .testy {
     flex-direction: row;
