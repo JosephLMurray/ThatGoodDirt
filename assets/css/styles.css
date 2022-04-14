@@ -41,8 +41,8 @@ main {
 
 #happyTrails {
   position: absolute;
-  top: 0;
-  left 0;
+  top: 6rem;
+  left: 0;
   width: 100%;
 }
 /* .nexTo { 
