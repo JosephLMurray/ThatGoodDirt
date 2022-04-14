@@ -5,6 +5,11 @@
   
 }
 
+body {
+  min-height: 100vh; 
+  background-image: url(/assets/img/bgImage.jpg) ;
+}
+
 .navPri {
   padding: 20px; 
 }
@@ -41,11 +46,11 @@ main {
 
 #happyTrails {
   position: absolute;
-  top: 0;
+  top: 6rem;
   left: 0;
   width: 100%;
-  background-image: url(/assets/img/bgImage.jpg);
 }
+
 /* .nexTo { 
   display: flex; 
   flex: wrap;
