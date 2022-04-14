@@ -89,7 +89,7 @@ const createCards = (results) => {
     // add i < 6 in for loop if we want 6 results....Rini
     for (let i = 0; i < results.length; i++) {
             siteDeck += 
-        `<div class = "leading-normal 	min-w-full	h-full			">`+
+        `<div class = "leading-normal 	min-w-full	h-full			flex-wrap">`+
                 `<a
                 href=""
                 class="relative block overflow-hidden bg-center bg-no-repeat bg-cover  rounded-xl"
@@ -139,7 +139,6 @@ $("#submitBtn").click(function(e) {
     e.preventDefault();
     $("#iBlock").hide();
 
-   
 });
 
 // mainForm.addEventListener('submit', formSubmitHandler);
