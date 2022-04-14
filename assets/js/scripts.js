@@ -94,7 +94,7 @@ const createCards = (results) => {
         let images = image === '' ? placeholder : results[i].photos[0].photo_reference ;
         console.log(images);
         siteDeck += 
-        `<div  class = "leading-normal min-w-full	h-full p-8	 ">`+
+        `<div  class = "leading-normal min-w-full	h-full p-6	 ">`+
         `<div class = "testy ">`+
                 `<a
                 href=""
@@ -123,8 +123,7 @@ const createCards = (results) => {
                 `<p class="text-sm">${results[i].vicinity}</p>`+
                 `</div>`+
             `</a>`+
-        `</div>`+
-    `</div>`
+        `</div>`
     }
     document.getElementById('happyTrails').innerHTML += siteDeck;     
 
@@ -142,4 +141,8 @@ $("#submitBtn").click(function(e) {
     e.preventDefault();
     $("#iBlock").hide();
 });
+
+$("#newSearch").click(function(e) {
+    document.getElementById('iBlock').style.display = 'block';
+})
 
