@@ -89,13 +89,17 @@ const createCards = (results) => {
     document.getElementById('happyTrails').innerHTML = siteDeck;
     // add i < 6 in for loop if we want 6 results....Rini
     for (let i = 0; i < results.length; i++) {
-            siteDeck += 
-            // padding to make cards not touch eachother
+        const placeholder = 'Aap_uECRr6W4TkACwI2LRnFqeeayxAE6WV9YTObJqt6tCoI06xCqofy4PZ0-qbUMIyJhu2m47eblcXdEYM5NN-cWOl-K3WRTI2EPCBkbpq8mFNJHq67GKbsvlFRvN7FmSwnW-6Nr2W1IACBn2CWwBdSRPF4S3KYaqsjyN0qlRm5FiI-G7O2A';
+        let image = results[i].photos ?? '';
+        let images = image === '' ? placeholder : results[i].photos[0].photo_reference ;
+        console.log(images);
+        siteDeck += 
         `<div  class = "leading-normal min-w-full	h-full p-6	 ">`+
+        `<div class = "testy ">`+
                 `<a
                 href=""
                 class="relative block overflow-hidden bg-center bg-no-repeat bg-cover  rounded-xl"
-                style="background-image: url(https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&maxheight=400&photo_reference=${results[i].photos[0].photo_reference}&key=${secretKey})"
+                style="background-image: url(https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&maxheight=400&photo_reference=${images}&key=${secretKey})"
             >`+
                 `<span
                 class="absolute z-10 inline-flex items-center px-3 py-1 text-xs font-semibold text-white bg-black rounded-full  right-4 top-4"
@@ -138,10 +142,7 @@ $("#submitBtn").click(function(e) {
     $("#iBlock").hide();
 });
 
-<<<<<<< HEAD
-
 $("#newSearch").click(function(e) {
     document.getElementById('iBlock').style.display = 'block';
 })
-=======
->>>>>>> 3b63d6a099e8d820f2ee20b8f3f5202e32416968
+
