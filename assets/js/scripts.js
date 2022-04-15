@@ -139,7 +139,7 @@ getStarted.addEventListener('click', (e) => {
 $("#submitBtn").click(function(e) { 
     e.preventDefault();
     $("#iBlock").hide();
-    // document.getElementById('hero').style.display = 'none';
+    document.getElementById('hero').style.display = 'none';
 });
 
 
