@@ -143,5 +143,8 @@ $("#submitBtn").click(function(e) {
 $("#newSearch").click(function(e) {
     document.getElementById('iBlock').style.display = 'block';
 })    
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 498d4606d7105342d1ceaf8088858f7ff0efea80
