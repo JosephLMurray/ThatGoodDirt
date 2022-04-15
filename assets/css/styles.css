@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
   width: 99vw;
   min-height: 100vh;
@@ -6,17 +5,11 @@ body {
 
 nav{
   z-index: 9999;
-=======
-
-body {
-  min-height: 100vh;
-  width: 99vw;
->>>>>>> baa63c6947307b484f47f33f7f882418507cdb1e
 }
 
 header {
+  width: 100%;
   position: fixed;
-  width: 100%
 }
 
 .navImg {
@@ -71,10 +64,8 @@ main {
   padding-top:0;
   padding-bottom: 10vh;
   background-color: black; 
-  display: hidden;
-  
-}
 
+}
 
 /* .nexTo { 
   display: flex; 
@@ -86,7 +77,6 @@ main {
   background-color: green!important;
   
 } */
-
 
 footer {
   position:fixed; 
