@@ -1,8 +1,3 @@
-body {
-  width: 99vw;
-  min-height: 100vh;
-}
-
 nav{
   z-index: 9999;
 }
@@ -19,6 +14,7 @@ header {
 
 body {
   min-height: 100vh; 
+  width: 99vw;
   background-image: url(/assets/img/bgImage.jpg) ;
 }
 
