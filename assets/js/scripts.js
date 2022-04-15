@@ -128,6 +128,7 @@ getStarted.addEventListener('click', (e) => {
     e.preventDefault();
     const formBlock = $("#iBlock"); 
     formBlock.removeClass('hidden');
+    document.getElementById('footer').style.display = 'none';
 
 }); 
 
@@ -136,6 +137,7 @@ $("#submitBtn").click(function(e) {
     e.preventDefault();
     $("#iBlock").hide();
     document.getElementById('hero').style.display = 'none'; 
+    document.getElementById('footer').style.display = 'flex'
 
 });
 
