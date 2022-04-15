@@ -12,7 +12,7 @@
 </head>
 <body>
   <!-- component -->
-
+<header>
 <div class="bg-white border-gray-50 px-2 font-serif sm:px-4 py-2.5 rounded bg-slate-700">
   <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
     <div class="p-4 flex flex-row items-center justify-between">
@@ -35,7 +35,7 @@
     </nav>
   </div>
 </div>
-  
+  </header>
 
 
 <div id = "hero" class="hero min-h-screen" style="background-image: url(./assets/img/bgImage.jpg);">
@@ -106,8 +106,9 @@
                 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="state"
                 aria-describedby="" placeholder="And a State">
             </div>
+          <hr>
         <!-- test -->
-        <div class="form-group mb-6 text-white"><label>zip</label>
+        <div class="form-group mb-6 text-white"><label>Zipcode</label>
           <input type="text" class="form-control
             block
             w-full
