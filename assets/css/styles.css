@@ -57,19 +57,12 @@ main {
 }
 
 #happyTrails {
-<<<<<<< HEAD
-=======
   position: absolute;
   top: 6rem;
->>>>>>> 92f21075e3fc7697efe341e498735d46449206cd
   left: 0;
   width: 100%;
   padding-top:0;
   background-color: black; 
-<<<<<<< HEAD
-=======
-
->>>>>>> 92f21075e3fc7697efe341e498735d46449206cd
 }
 
 /* .nexTo { 
