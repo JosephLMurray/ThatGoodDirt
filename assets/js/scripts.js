@@ -50,7 +50,6 @@ const getGeoCode = (address, trails, rangeKm) => {
     fetch(geoAPI)
         .then((response) => {
             if (response.ok) {
-                console.log(response);
             response.json().then((data) => {
                 const coords = data.results[0].geometry.location;
                 getHikingTrails(trails, rangeKm, coords.lat, coords.lng);})
@@ -70,9 +69,7 @@ const getHikingTrails = (trails, rangeKm, lat, lon) => {
     fetch(proxyURL + placesAPI)
         .then((response) => {
             if (response.ok) {
-                console.log(response);
             response.json().then((data) => {
-                console.log(data);
                 createCards(data.results);
             })
             } else {
@@ -92,7 +89,6 @@ const createCards = (results) => {
         const placeholder = 'Aap_uECRr6W4TkACwI2LRnFqeeayxAE6WV9YTObJqt6tCoI06xCqofy4PZ0-qbUMIyJhu2m47eblcXdEYM5NN-cWOl-K3WRTI2EPCBkbpq8mFNJHq67GKbsvlFRvN7FmSwnW-6Nr2W1IACBn2CWwBdSRPF4S3KYaqsjyN0qlRm5FiI-G7O2A';
         let image = results[i].photos ?? '';
         let images = image === '' ? placeholder : results[i].photos[0].photo_reference ;
-        console.log(images);
         siteDeck += 
         `<div  class = "leading-normal min-w-full	h-full p-4	 ">`+
                 `<a
