@@ -94,7 +94,7 @@ const createCards = (results) => {
         let images = image === '' ? placeholder : results[i].photos[0].photo_reference ;
         console.log(images);
         siteDeck += 
-        `<div  class = "leading-normal min-w-full	h-full p-6	 ">`+
+        `<div  class = "leading-normal min-w-full	h-full p-4	 ">`+
                 `<a
                 href=""
                 class="relative block overflow-hidden bg-center bg-no-repeat bg-cover  rounded-xl"
@@ -139,11 +139,13 @@ getStarted.addEventListener('click', (e) => {
 $("#submitBtn").click(function(e) { 
     e.preventDefault();
     $("#iBlock").hide();
-    document.getElementById('hero').style.display = 'none';
+    document.getElementById('hero').style.display = 'none'; 
+
 });
 
 
 $("#newSearch").click(function(e) {
     document.getElementById('iBlock').style.display = 'block';
-})
+})    
+
 

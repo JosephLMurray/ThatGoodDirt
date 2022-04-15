@@ -57,12 +57,13 @@ main {
 }
 
 #happyTrails {
-  position: absolute;
   top: 6rem;
   left: 0;
   width: 100%;
+  padding-top:0;
   padding-bottom: 10vh;
   background-color: black; 
+  
 
 }
 
