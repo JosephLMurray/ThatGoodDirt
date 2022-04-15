@@ -12,9 +12,10 @@ header {
   position: fixed;
 }
 
-.navImg {
-  border-radius: 30px;
-  
+footer {
+  position:fixed; 
+  bottom: 0;
+  z-index: 1000;
 }
 
 body {
@@ -22,16 +23,27 @@ body {
   background-image: url(/assets/img/bgImage.jpg) ;
 }
 
+li { 
+  font-size: 20px; 
+}
+
+main {
+  display: grid; 
+  place-items:center;
+}
+
+.navImg {
+  border-radius: 30px;
+  
+}
+
+
 .navPri {
   padding: 20px; 
 }
 
 .textN { 
   font-size: 50px;
-}
-
-li { 
-  font-size: 20px; 
 }
 
 
@@ -46,15 +58,16 @@ li {
   justify-content: center;
   position: fixed;
   width: 100%;
-  top: 0;
+  top: -60px;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-main {
-  display: grid; 
-  place-items:center;
+.test {
+  display: flex;
+  justify-content: right;
 }
+
 
 #happyTrails {
   position: absolute;
@@ -67,32 +80,9 @@ main {
 
 }
 
-/* .nexTo { 
-  display: flex; 
-  flex: wrap;
-} */
-
-
-/* .range-primary {
-  background-color: green!important;
-  
-} */
-
-footer {
-  position:fixed; 
-  bottom: 0;
-  z-index: 1000;
-}
-
 #toHide { 
   display:0;
 }
-
-.test {
-  display: flex;
-  justify-content: right;
-}
-
 
 @media only screen and (max-width: 600px) {
   #happyTrails {
