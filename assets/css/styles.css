@@ -13,6 +13,12 @@ header {
   
 }
 
+body {
+  min-height: 100vh; 
+  width: 99vw;
+  background-image: url(/assets/img/bgImage.jpg) ;
+}
+
 .navPri {
   padding: 20px; 
 }
@@ -48,11 +54,16 @@ main {
 }
 
 #happyTrails {
-  position: absolute;
   top: 6rem;
   left: 0;
   width: 100%;
+  padding-top:0;
+  padding-bottom: 10vh;
+  background-color: black; 
+  
+
 }
+
 /* .nexTo { 
   display: flex; 
   flex: wrap;
@@ -64,6 +75,11 @@ main {
   
 } */
 
+footer {
+  position:fixed; 
+  bottom: 0;
+  z-index: 1000;
+}
 
 #toHide { 
   display:0;
@@ -71,7 +87,7 @@ main {
 
 .test {
   display: flex;
- justify-content: right;
+  justify-content: right;
 }
 
 
@@ -81,3 +97,4 @@ main {
 
   }
 }
+
