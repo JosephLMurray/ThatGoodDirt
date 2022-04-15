@@ -1,12 +1,15 @@
-
 body {
-  min-height: 100vh;
   width: 99vw;
+  min-height: 100vh;
+}
+
+nav{
+  z-index: 9999;
 }
 
 header {
+  width: 100%;
   position: fixed;
-  width: 100%
 }
 
 .navImg {
@@ -16,7 +19,6 @@ header {
 
 body {
   min-height: 100vh; 
-  width: 99vw;
   background-image: url(/assets/img/bgImage.jpg) ;
 }
 
@@ -55,14 +57,12 @@ main {
 }
 
 #happyTrails {
+  position: absolute;
   top: 6rem;
   left: 0;
   width: 100%;
   padding-top:0;
-  padding-bottom: 10vh;
   background-color: black; 
-  
-
 }
 
 /* .nexTo { 

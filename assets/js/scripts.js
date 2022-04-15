@@ -143,4 +143,3 @@ $("#submitBtn").click(function(e) {
 $("#newSearch").click(function(e) {
     document.getElementById('iBlock').style.display = 'block';
 })    
-
