@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   width: 99vw;
   min-height: 100vh;
@@ -5,11 +6,17 @@ body {
 
 nav{
   z-index: 9999;
+=======
+
+body {
+  min-height: 100vh;
+  width: 99vw;
+>>>>>>> baa63c6947307b484f47f33f7f882418507cdb1e
 }
 
 header {
-  width: 100%;
   position: fixed;
+  width: 100%
 }
 
 .navImg {
