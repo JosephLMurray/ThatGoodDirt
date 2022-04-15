@@ -97,7 +97,7 @@ const createCards = (results) => {
                 style="background-image: url(https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&maxheight=400&photo_reference=${images}&key=${secretKey})"
             >`+
                 `<span
-                class="absolute z-10 inline-flex items-center px-3 py-1 text-xs font-semibold text-white bg-black rounded-full  right-4 top-4"
+                class="absolute  inline-flex items-center px-3 py-1 text-xs font-semibold text-white bg-black rounded-full  right-4 top-4"
                 >`+
                 `${results[i].rating}`+
             
@@ -141,5 +141,5 @@ $("#submitBtn").click(function(e) {
 
 
 $("#newSearch").click(function(e) {
-    document.getElementById('iBlock').style.display = 'block';
+    document.getElementById('iBlock').style.display = 'flex';
 })    
