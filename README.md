@@ -14,7 +14,12 @@ Making it a walk in the park from start to finish.
 
 
 ## Project location
+  * REPO LINK 
   https://github.com/JosephLMurray/ThatGoodDirt
+
+* LIVE LINK
+https://josephlmurray.github.io/ThatGoodDirt/
+
 
 
 Initial relaease April 15, 2022
@@ -46,6 +51,21 @@ https://github.com/schaparro08
 
 
 * Type of format Markdown 
+
+
+## Image of project 
+![screenshot](./assets/imgs/screencapture-file-Users-stephaniechaparro-roldan-Documents-UCF-ThatGoodDirt-ThatGoodDirt-index-html-2022-04-15-09_47_29.png)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
