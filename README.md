@@ -69,5 +69,5 @@ https://github.com/schaparro08
 
 
 * Once the user desides on which route to embark on the application will redirect the user to the first step of their GoodDirt journey exterience. 
-
+![screenshot](./assets/imgs/screencapture-file-Users-stephaniechaparro-roldan-Documents-UCF-ThatGoodDirt-ThatGoodDirt-index-html-2022-04-15-09_47_29.png)
 
